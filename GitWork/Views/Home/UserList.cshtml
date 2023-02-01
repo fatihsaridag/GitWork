@@ -1,0 +1,25 @@
+﻿
+@using GitWork.Models
+@model List<UserRegister>
+
+@{
+    ViewData["Title"] = "UserList";
+}
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Kullanıcı Adı</th>
+            <th>Kullanıcı Soyadı</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.FirstName</td>
+                <td>@item.LastName</td>
+            </tr>
+        }
+    </tbody>
+</table>

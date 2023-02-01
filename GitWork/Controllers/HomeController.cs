@@ -39,5 +39,12 @@ namespace GitWork.Controllers
         }
 
 
+        public IActionResult UserList()
+        {
+            var users = _context.UserRegisters.ToList();
+            return View(users);
+        }
+
+
     }
 }
