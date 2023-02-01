@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fatih\\source\\repos\\GitWork\\GitWork\\GitWork.csproj": {}
+    "C:\\Users\\aakyo\\Desktop\\GitWork\\GitWork\\GitWork.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fatih\\source\\repos\\GitWork\\GitWork\\GitWork.csproj": {
+    "C:\\Users\\aakyo\\Desktop\\GitWork\\GitWork\\GitWork.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fatih\\source\\repos\\GitWork\\GitWork\\GitWork.csproj",
+        "projectUniqueName": "C:\\Users\\aakyo\\Desktop\\GitWork\\GitWork\\GitWork.csproj",
         "projectName": "GitWork",
-        "projectPath": "C:\\Users\\fatih\\source\\repos\\GitWork\\GitWork\\GitWork.csproj",
-        "packagesPath": "C:\\Users\\fatih\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fatih\\source\\repos\\GitWork\\GitWork\\obj\\",
+        "projectPath": "C:\\Users\\aakyo\\Desktop\\GitWork\\GitWork\\GitWork.csproj",
+        "packagesPath": "C:\\Users\\aakyo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aakyo\\Desktop\\GitWork\\GitWork\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\fatih\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aakyo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -80,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
