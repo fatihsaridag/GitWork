@@ -1,0 +1,43 @@
+﻿using GitWork.Models;
+using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
+
+namespace GitWork.Controllers
+{
+    public class HomeController : Controller
+    {
+        private readonly ILogger<HomeController> _logger;
+        private readonly GitWorkContext _context;
+
+  
+
+        public HomeController(ILogger<HomeController> logger , GitWorkContext context )
+        {
+            _logger = logger;
+            _context = context;
+        }
+
+
+        [HttpGet]
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+
+        public IActionResult Index(UserRegister userRegister)
+        {
+            if (userRegister.FirstName != null && userRegister.LastName != null)
+            {
+
+                _context.UserRegisters.Add(userRegister);
+                _context.SaveChanges();
+                return RedirectToAction("Index");
+            }    
+
+            return View(userRegister);
+        }
+
+  
+    }
+}
