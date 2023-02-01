@@ -9,9 +9,9 @@ namespace GitWork.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly GitWorkContext _context;
 
-  
 
-        public HomeController(ILogger<HomeController> logger , GitWorkContext context )
+
+        public HomeController(ILogger<HomeController> logger, GitWorkContext context)
         {
             _logger = logger;
             _context = context;
@@ -24,7 +24,7 @@ namespace GitWork.Controllers
             return View();
         }
 
-
+        [HttpPost]
         public IActionResult Index(UserRegister userRegister)
         {
             if (userRegister.FirstName != null && userRegister.LastName != null)
@@ -33,11 +33,11 @@ namespace GitWork.Controllers
                 _context.UserRegisters.Add(userRegister);
                 _context.SaveChanges();
                 return RedirectToAction("Index");
-            }    
+            }
 
             return View(userRegister);
         }
 
-  
+
     }
 }
